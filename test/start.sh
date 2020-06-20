@@ -1,8 +1,8 @@
 #!/bin/bash
 
-NODE=`docker exec node node --version`
-NPM=`docker exec node npm --version`
-YARN=`docker exec node yarn --version`
+NODE=`node --version`
+NPM=`npm --version`
+YARN=`yarn --version`
 
 if [ "$NODE" != "v12.17.0" ]; then
   echo "**** Node not found ****"

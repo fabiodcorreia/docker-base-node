@@ -1,6 +1,6 @@
 kind: pipeline
 type: docker
-name: build-test-build
+name: build-test
 
 platform:
   os: linux
@@ -44,11 +44,10 @@ steps:
       PUID: "1000"
       PGID: "1000"
     commands:
-      - sleep 60
       - sh ./test/start.sh
 
 depends_on:
-  - build-test-build
+  - build-test
 
 ---
 kind: pipeline

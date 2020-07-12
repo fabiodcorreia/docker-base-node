@@ -37,3 +37,7 @@ xz-5.2.5-r0
 xz-libs-5.2.5-r0
 yarn-1.22.4-r0
 zlib-1.2.11-r3
+===== NPM Packages =====
+/usr/lib
+`-- (empty)
+

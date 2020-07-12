@@ -9,6 +9,6 @@ ENV NODE_ENV production
 
 RUN \
   echo "**** install runtime packages ****" && \
-    apk add --no-cache nodejs npm yarn && \
+    apk add --no-cache nodejs npm && \
   echo "**** cleanup ****" && \
     rm -rf /tmp/* /var/tmp/*
